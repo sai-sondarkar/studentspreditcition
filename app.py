@@ -18,7 +18,7 @@ def make_predict():
     #np array goes into random forest, prediction comes out
     y_hat = my_random_forest.predict(predict_request)
     #return our prediction
-    output = {'y_hat': y_hat[0]}
+    output = {'min_months_time_span': y_hat[0]*60}
     print(output)
     return jsonify(results=output)
 
