@@ -33,7 +33,7 @@ def make_predict():
     y_hat = set
     output = {'job_set': y_hat}
     print(output)
-    return jsonify(results=output)
+    return jsonify(output)
 
 if __name__ == '__main__':
     app.run()
